@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Studentcorner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light p-0 m-0">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand bg-light" href="#"
+          ><img
+            src="./images/Group 52.png
+          "
+            alt=""
+        /></a>
+        <!-- TOGGLE BUTTON  -->
+        <button
+          class="navbar-toggler px-md-4"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item my-auto mx-lg-2">
+              <!-- CAREER BUTTON  -->
+              <button
+                class="btn-dark-purple policareer-btn rounded-5 text-white"
+                type="button"
+                href="#"
+              >
+                Studentcorner Career
+              </button>
+            </li>
+
+            <!-- NAV-ITEMS-LINKS -->
+
+            <li class="nav-item my-auto mx-lg-2">
+              <a class="nav-link" href="#"
+                ><img
+                  src="./images/Vector.png"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                />
+                Inbox</a
+              >
+            </li>
+            <li class="nav-item my-auto mx-lg-2">
+              <a class="nav-link" href="#"
+                ><img
+                  src="./images/Notifications.png"
+                  alt=""
+                  height="15px"
+                  width="15px"
+                />
+                Notifications</a
+              >
+            </li>
+            <li class="nav-item my-auto mx-lg-2">
+              <a class="nav-link" href="#"
+                ><img
+                  src="./images/helpcenter.png"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                />
+                Help Center</a
+              >
+            </li>
+            <li class="nav-item my-auto d-flex">
+              <a class="nav-link" href="#"
+                ><img
+                  src="./images/penn-removebg-preview.png"
+                  alt=""
+                  height="79px"
+                  width="78px"
+              /></a>
+              <a class="nav-link my-auto" href="#"
+                >University of Students <br />
+                Career Services</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR & MAIN BODY-->
+    <div class="body row g-2">
+      <!-- SIDE NAV BAR -->
+      <div class="side-nav col-md-2">
+        <div>
+          <ul class="side-nav-items nav flex-column ms-3">
+            <li class="nav-item">
+              <button class="btn-dark-purple dashboard-btn rounded text-white">
+                <img
+                  src="./images/dashboard.png"
+                  alt=""
+                  height="18px"
+                  width="18px"
+                  class="me-2"
+                />My Dashboard
+              </button>
+            </li>
+            <li class="nav-item mt-2">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><img
+                  src="./images/school.png"
+                  alt=""
+                  height="16px"
+                  width="12.19px"
+                  class="me-2 text-black"
+                />My School Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><img
+                  src="./images/jobboard.png"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                  class="me-2 text-black"
+                />Job Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><img
+                  src="./images/messages-sidenav.png"
+                  alt=""
+                  height="16px"
+                  width="16px"
+                  class="me-2 text-black"
+                />My Messages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><img
+                  src="./images/Notifications.png"
+                  alt=""
+                  height="17.5px"
+                  width="16.67px"
+                  class="me-2 text-black nowrap"
+                />Notification Preferences</a
+              >
+            </li>
+            <li class="nav-item mt-auto text-center">
+              <a class="nav-link logout-btn" href="#"
+                ><img
+                  src="./images/logout.png"
+                  alt=""
+                  height="18px"
+                  width="20px"
+                  class="me-2 text-black"
+                />Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MAIN BODY -->
+      <div class="col-md-10 mt-2">
+        <div class="main-body pb-4">
+          <!-- STUDENT'S STATUS -->
+          <div class="container-fluid">
+            <ul class="student-stats d-flex pt-3">
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="#">My Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Application Statistics</a>
+              </li>
+            </ul>
+            <hr />
+          </div>
+
+          <!-- STUDENT STATISTICS -->
+          <div class="stats mt-4 mx-3">
+            <div class="row">
+              <!-- STUDENTS BY CLASS YEAR -->
+              <div class="col-md-6">
+                <div class="content-box container-fluid">
+                  <div class="row">
+                    <p class="graph-title text-center pt-3">
+                      Students by Class Year - University of Pennsylvania
+                    </p>
+                    <div class="col-md-4">
+                      <div class="chart-box">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="me-2">
+                        <table class="table text-center class-year-table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Class Year</th>
+                              <th scope="col">Number of Students</th>
+                              <th scope="col">Percent of Students</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>First-Year</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Sophomore</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Junior</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Senior</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Alumni</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- STUDENTS BY MAJOR -->
+              <div class="col-md-6">
+                <div class="content-box container-fluid">
+                  <div class="row">
+                    <p class="graph-title text-center pt-3">
+                      Students by Major - University of Pennsylvania
+                    </p>
+                    <div class="col-md-4">
+                      <div class="chart-box">
+                        <canvas id="myChart1"></canvas>
+                        <p class="table text-center pt-2">
+                          <a href="#">With Alumni </a>| Without Alumni
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="me-2">
+                        <table class="table text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">Major</th>
+                              <th scope="col">Number of Students</th>
+                              <th scope="col">Percent of Students</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class=".nowrap">Political Science</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td class=".nowrap">Political Science</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td class=".nowrap">Political Science</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td class=".nowrap">Political Science</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td class=".nowrap">Political Science</td>
+                              <td>20</td>
+                              <td>40%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEARCH STUDENT CONTAINER -->
+          <div class="student-search mt-4 px-2">
+            <div class="content-box container-fluid pt-3">
+              <div class="top-search-head">
+                <div class="header d-flex p-md-2">
+                  <h5 class="my-auto" href="#">My Students</h5>
+                  <ul class="student-stats d-flex my-auto ms-auto">
+                    <li class="nav-item me-3">
+                      <button class="btn-light-white rounded-5" href="#">
+                        <img
+                          src="./images/massaction.png"
+                          alt=""
+                          height="16px"
+                          width="16px"
+                          class="me-2"
+                        />Mass Action
+                      </button>
+                    </li>
+                    <li class="nav-item me-3">
+                      <button
+                        class="btn-dark-purple rounded-5 text-white"
+                        href="#"
+                      >
+                        <img
+                          src="./images/add.png"
+                          alt=""
+                          height="16px"
+                          width="16px"
+                          class="me-2"
+                        />Add Student
+                      </button>
+                    </li>
+                    <li class="nav-item me-3">
+                      <button
+                        class="btn-light-purple rounded-5 text-white"
+                        href="#"
+                      >
+                        <img
+                          src="./images/download.png"
+                          alt=""
+                          height="16px"
+                          width="16px"
+                          class="me-2"
+                        />Download List
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+
+                <!-- SEARCH CATEGORIES -->
+                <div
+                  class="search-categories p-md-2 d-flex mx-2 container-fluid"
+                >
+                  <div class="input-group border rounded-5">
+                    <span class="input-group-append">
+                      <button class="btn rounded-pill border-0" type="button">
+                        <img src="./images/search.png" alt="" />
+                      </button>
+                    </span>
+                    <input
+                      class="form-control py-2 rounded-pill border-0"
+                      type="search"
+                      placeholder="Search for name, keyword, or anything!"
+                    />
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Year
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2022</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">2021</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">2020</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Major
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Business</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Political Science</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Engineering</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Location
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sylhet</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Chittagong</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Current Employer
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">DevDesh</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Astro</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">WebDev</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Interests
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Sports</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Music</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Debate</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn-dropdown dropdown-toggle rounded-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Lists
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TABLE HEADER -->
+              <table class="table category-table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Student
+                        </label>
+                      </div>
+                    </th>
+                    <th scope="col my-auto">
+                      Year <img src="./images/downarrow.png" alt="" />
+                    </th>
+                    <th scope="col my-auto">
+                      Major <img src="./images/downarrow.png" alt=""
+                    </th>
+                    <th scope="col my-auto">
+                      Location <img src="./images/downarrow.png" alt=""
+                    </th>
+                    <th scope="col my-auto">
+                      Current Employer <img src="./images/downarrow.png" alt=""
+                    </th>
+                    <th scope="col my-auto">
+                      Interests <img src="./images/downarrow.png" alt=""
+                    </th>
+                    <th scope="col my-auto">
+                      Lists <img src="./images/downarrow.png" alt=""
+                    </th>
+                    <th scope="col my-auto"></th>
+                  </tr>
+                </thead>
+                <!-- TABLE BODY -->
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mike Jones
+                        </label>
+                      </div>
+                    </td>
+                    <td>Junior Class of 2022</td>
+                    <td>
+                      Political Science <br />
+                      Business Administration
+                    </td>
+                    <td>Massapequa, NY</td>
+                    <td>House of Representatives</td>
+                    <td>
+                      Pre-Law <br />
+                      Government <span>+5</span>
+                    </td>
+                    <td class="d-flex flex-column">
+                      <button class="btn-light-blue mb-1">Campaign</button>
+                      <button class="btn-light-red">DC</button> <span>+5</span>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/message-purple.png"
+                          alt=""
+                          height="25px"
+                          width="25px"
+                          class="me-1"
+                        />
+                        <img
+                          src="./images/trash.png"
+                          alt=""
+                          height="22px"
+                          width="22px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mike Jones
+                        </label>
+                      </div>
+                    </td>
+                    <td>Junior Class of 2022</td>
+                    <td>Political Science</td>
+                    <td>Massapequa, NY</td>
+                    <td>House of Representatives</td>
+                    <td>
+                      Pre-Law <br />
+                      Government <span>+5</span>
+                    </td>
+                    <td class="">
+                      <button class="btn-light-blue">Campaign</button>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/message-purple.png"
+                          alt=""
+                          height="25px"
+                          width="25px"
+                          class="me-1"
+                        />
+                        <img
+                          src="./images/trash.png"
+                          alt=""
+                          height="22px"
+                          width="22px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mike Jones
+                        </label>
+                      </div>
+                    </td>
+                    <td>Junior Class of 2022</td>
+                    <td>Political Science</td>
+                    <td>Massapequa, NY</td>
+                    <td>House of Representatives</td>
+                    <td>
+                      Pre-Law <br />
+                      Government <span>+5</span>
+                    </td>
+                    <td class="">
+                      <button class="btn-light-yellow">Pre-Law</button>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/message-purple.png"
+                          alt=""
+                          height="25px"
+                          width="25px"
+                          class="me-1"
+                        />
+                        <img
+                          src="./images/trash.png"
+                          alt=""
+                          height="22px"
+                          width="22px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mike Jones
+                        </label>
+                      </div>
+                    </td>
+                    <td>Junior Class of 2022</td>
+                    <td>Political Science</td>
+                    <td>Massapequa, NY</td>
+                    <td>House of Representatives</td>
+                    <td>
+                      Pre-Law <br />
+                      Government <span>+5</span>
+                    </td>
+                    <td class="">
+                      <button class="btn-light-blue">Campaign</button>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/message-purple.png"
+                          alt=""
+                          height="25px"
+                          width="25px"
+                          class="me-1"
+                        />
+                        <img
+                          src="./images/trash.png"
+                          alt=""
+                          height="22px"
+                          width="22px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- TABLE FOOTER -->
+              <div class="category-footer d-flex">
+                <p class="table">
+                  Items per page 25
+                  <img
+                    src="./images/downarrow.png"
+                    alt=""
+                    class="pe-2"
+                  />Showing 1-2 of 2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

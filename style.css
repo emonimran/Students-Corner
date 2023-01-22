@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@300;400;500;600;700;900&display=swap");
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Mulish', sans-serif; */
+
+:root {
+  --header-height: 115px;
+  --dark-color: #333333;
+  --dark-purple: #7333dc;
+  --white-color: #f8fbfe;
+  --light-purple: #9747ff;
+  --background-color: #f5f5f5;
+  --light-white: #ebf0f5;
+  --main-body-bg: #fffefe;
+  --body-font: "Nunito", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+}
+
+/* GLOBAL STYLE STARTS */
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", "Mulish", sans-serif;
+  background-color: var(--background-color);
+  height: 100%;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* GLOBAL STYLE ENDS */
+
+/* ALL BUTTON STYLE STARTS  */
+
+.btn-dark-purple {
+  background-color: var(--dark-purple);
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+}
+
+.btn-dark-purple:hover {
+  background-color: var(--light-purple);
+}
+
+.btn-light-purple {
+  background-color: var(--light-purple);
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+}
+
+.btn-light-purple:hover {
+  background-color: var(--dark-purple);
+}
+
+.btn-light-white {
+  background-color: var(--light-white);
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 12px;
+  border: 0.5px solid #c7cdd8;
+  color: var(--dark-purple);
+}
+
+.btn-dropdown {
+  background-color: #ffffff;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 0.5px solid #c7cdd8;
+  color: var(--dark-color);
+}
+
+.btn-light-red {
+  background-color: #fbe0ff;
+
+  padding: 8px;
+  font-family: "DM Sans";
+  font-size: 12px;
+  border: 0.5px solid #c7cdd8;
+  border-radius: 30px;
+  color: #ab00d6;
+}
+
+.btn-light-blue {
+  background-color: #e0edff;
+
+  padding: 10px;
+  font-family: "DM Sans";
+  font-size: 12px;
+  border: 0.5px solid #c7cdd8;
+  border-radius: 30px;
+  color: #0064d6;
+}
+
+.btn-light-yellow {
+  background-color: #feffe0;
+
+  padding: 10px;
+  font-family: "DM Sans";
+  font-size: 12px;
+  border: 0.5px solid #c7cdd8;
+  border-radius: 30px;
+  color: #d6c100;
+}
+
+/* ALL BUTTON STYLE ENDS */
+
+/* NAVBAR STARTS */
+.navbar {
+  height: 115px;
+  background-color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-color);
+  line-height: 16px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--dark-color);
+}
+
+/* NAVBAR ENDS */
+
+/* SIDEBAR STARTS */
+.side-nav {
+  background-color: rgba(248, 251, 254, 0.7);
+}
+
+.side-nav-items {
+  padding-left: 10px;
+  height: 100vh;
+}
+
+.side-nav .side-nav-items .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.side-nav .side-nav-items .nav-item .nav-link {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.dashboard-btn {
+  font-size: 14px;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+/* SIDEBAR ENDS */
+
+/* MAIN BODY STARTS  */
+.main-body {
+  margin: 10px 22px;
+  background-color: var(--main-body-bg);
+}
+
+/* STATS BOX STYLE */
+.content-box {
+  border: 1px solid none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  height: 294;
+  position: relative;
+}
+
+.graph-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+}
+
+/* STUDENT INFO TABLE STYLE */
+
+.table {
+  font-size: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.stats-box {
+  height: 376px;
+}
+
+.chart-box {
+  /* position: absolute; */
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  /* left: -40px; */
+}
+
+.top-search-head {
+  background-color: rgba(248, 251, 254, 0.8);
+  border: 2.66667px solid #ffffff;
+  border-radius: 20px;
+}
+
+.category-table {
+  font-size: 15px;
+}
+.category-table th {
+  font-size: 15px;
+}
+
+table td span {
+  color: blue;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* MAIN BODY ENDS  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+  .chart-box {
+    /* position: absolute; */
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    margin-top: 50px;
+    /* left: -40px; */
+  }
+
+  .content-box {
+    height: 100%;
+  }
+
+  .btn-dropdown {
+    font-size: 12px;
+  }
+
+  .dashboard-btn {
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  .side-nav-items {
+    padding-left: 0;
+    height: 160vh;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: var(--dark-color);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  .policareer-btn {
+    padding: 10px;
+  }
+
+  .class-year-table {
+    margin-top: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  
+.policareer-btn {
+  padding: 14px;
+  font-size: 16px;
+}
+}
